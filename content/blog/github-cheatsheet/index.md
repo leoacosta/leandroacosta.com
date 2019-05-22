@@ -10,6 +10,9 @@ It's because of this, I've decided to have this post as a way to add those which
 
 ```
 git pull origin [branch]
+```
+
+```
 git branch -d [branch]
 ```
 
