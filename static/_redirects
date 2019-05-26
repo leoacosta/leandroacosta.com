@@ -1,2 +1,13 @@
 # Redirects from what the browser requests to what we serve
 /movieset /
+/online-soccer-tutor /
+/hello-world /
+/the-blaze /
+/my-cheap-travel-guide /
+/templates/invokr/blog.html /
+/templates/invokr/index.html /
+/templates/invokr/full-width.html /
+/templates/invokr/portfolio-single.html /
+/templates/invokr/blog-left-sidebar.html /
+/templates/invokr/portfolio-4-columns.html /
+/portfolio/page/2/?theme=invokr /
