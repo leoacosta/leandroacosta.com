@@ -5,6 +5,7 @@ import styled from "styled-components"
 import { rhythm, scale } from "../utils/typography"
 
 const Header = styled.header`
+  align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 25px;

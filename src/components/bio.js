@@ -14,6 +14,7 @@ import { rhythm } from "../utils/typography"
 
 const Tagline = styled.p`
   margin: 0;
+  display: none;
   // border: 10px solid red;
 
   // @media (max-width: 700px) {
