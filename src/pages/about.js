@@ -1,6 +1,6 @@
 import React from "react"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Bio from "../components/bio"
 import SEO from "../components/seo"
 
 class About extends React.Component {
@@ -14,7 +14,6 @@ class About extends React.Component {
         <h1>About</h1>
         <p>I’m Leandro Acosta and I do the codes...</p>
         <p>Currently, I’m a Front End Developer at Latitude Financial.</p>
-        <Bio />
       </Layout>
     )
   }
