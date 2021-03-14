@@ -10,7 +10,6 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -76,6 +75,5 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    `gatsby-plugin-styled-components`,
   ],
 }
