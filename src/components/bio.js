@@ -7,7 +7,7 @@
 
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import { rhythm } from "../utils/typography"
@@ -40,7 +40,7 @@ function Bio() {
             }}
           >
             <StyledLink to={`/`}>
-              <Image
+              <StaticImage
                 fixed={data.avatar.childImageSharp.fixed}
                 alt={author}
                 style={{
