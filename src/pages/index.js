@@ -1,23 +1,22 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import styled from "styled-components"
-import { rhythm } from "../utils/typography"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import styled from "styled-components";
 
 const PostTitle = styled.h3`
   font-size: 46px;
-`
-const StyledLink = styled(props => <Link {...props} />)`
+`;
+const StyledLink = styled((props) => <Link {...props} />)`
   box-shadow: none;
   color: #242424;
-`
+`;
 
 class BlogIndex extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+    const { data } = this.props;
+    const siteTitle = data.site.siteMetadata.title;
+    const posts = data.allMarkdownRemark.edges;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -27,7 +26,7 @@ class BlogIndex extends React.Component {
         />
         {/* <Bio /> */}
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+          const title = node.frontmatter.title || node.fields.slug;
           return (
             <div key={node.fields.slug}>
               <PostTitle>
@@ -40,14 +39,14 @@ class BlogIndex extends React.Component {
                 }}
               />
             </div>
-          )
+          );
         })}
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogIndex
+export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
@@ -72,4 +71,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

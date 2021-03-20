@@ -1,25 +1,25 @@
-import React from "react"
-import { Link } from "gatsby"
-import Bio from "./bio"
-import styled from "styled-components"
-import { rhythm, scale } from "../utils/typography"
+import React from "react";
+import { Link } from "gatsby";
+import Bio from "./bio";
+import styled from "styled-components";
+import { rhythm, scale } from "../utils/typography";
 
 const Header = styled.header`
   align-items: center;
   display: flex;
   justify-content: space-between;
   padding: 25px;
-`
+`;
 
-const StyledLink = styled(props => <Link {...props} />)`
+const StyledLink = styled((props) => <Link {...props} />)`
   box-shadow: none;
-`
+`;
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const { location, title, children } = this.props;
+    const rootPath = `${__PATH_PREFIX__}/`;
+    let header;
 
     if (location.pathname === rootPath) {
       header = (
@@ -41,7 +41,7 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h1>
-      )
+      );
     } else {
       header = (
         <h3
@@ -61,7 +61,7 @@ class Layout extends React.Component {
             {title}
           </Link>
         </h3>
-      )
+      );
     }
     return (
       <React.Fragment>
@@ -86,8 +86,8 @@ class Layout extends React.Component {
           </footer>
         </div>
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;
