@@ -79,12 +79,16 @@ class Layout extends React.Component {
           }}
         >
           <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
         </div>
+        <hr style={{ margin: 0 }} />
+        <footer style={{ textAlign: "center", padding: "2rem 1rem" }}>
+          Say{" "}
+          <a href="https://iamleoacosta.com/wp-content/uploads/2017/08/hello.gif">
+            hola
+          </a>{" "}
+          or check out my code wrangling on{" "}
+          <a href="https://codepen.io/iamleoacosta/">CodePen</a>
+        </footer>
       </React.Fragment>
     );
   }
